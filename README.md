@@ -1,5 +1,7 @@
-# manjaro-i3wm-post-install-guide
-packages to install after a fresh manjaro i3 install
+# manjaro i3wm-post-install-guide
+Rough guide of packages and apps to install after a fresh manjaro i3 install. Updating as I go through my own setup. 
+
+## system
 
 Update pacman mirrors
 ```
@@ -9,18 +11,6 @@ sudo pacman-mirrors -f 30
 update installed packages
 ```
 sudo pacman -Syu
-```
-
-install brave browser
-```
-sudo pacman -S brave-browser
-```
-For setting Brave as default browser see [this](https://unix.stackexchange.com/a/434465) post.
-
-Install [fish](https://fishshell.com/)
-
-```
-yay -S fish
 ```
 
 enable fstrim to make the SSD happy. See [this post](https://forum.manjaro.org/t/do-i-need-to-enable-trim-on-m2-ssd/72887/2) for more info
@@ -37,10 +27,10 @@ sudo systemctl status ufw
 sudo systemctl enable ufw
 ```
 
-install vscode
+Install [fish](https://fishshell.com/)
 
 ```
-yay -S visual-studio-code-bin
+yay -S fish
 ```
 
 i3-config-wizard should run at first i3 boot, if not:
@@ -55,6 +45,25 @@ sudo pacman -S alacritty
 Remember to alter default terminal (default `$super+enter`) in .i3/config
 Switch out
 
+
+
+
+## apps
+
+install brave browser (tip: add [ublock origin](https://github.com/gorhill/uBlock) as an extension)
+
+```
+sudo pacman -S brave-browser
+```
+For setting Brave as default browser see [this](https://unix.stackexchange.com/a/434465) post.
+
+install vscode, i prefer the binary to get access to the marketplate
+
+```
+yay -S visual-studio-code-bin
+```
+## Ricing I3
+
 Install [Rofi](https://wiki.archlinux.org/title/Rofi) as an alternative to dmenu
 ```
 yay -S rofi
@@ -64,10 +73,11 @@ Create rofi config by dumping default
 ```
 rofi -dump-config > ~/.config/rofi/config.rasi
 ```
-Choose a rofi theme you like
+Choose a rofi theme you like by running (if you're unable to save theme with ALT+a you need to run step above)
 ```
 rofi-theme-selector
 ```
+Rofi is highly customizeable, e.g. see [this repo](https://github.com/adi1090x/rofi) for a huge collection of custom Applets, Launchers & Powermenus
 
 install [neovim](https://wiki.archlinux.org/title/Neovim) and add python support
 ```
@@ -81,7 +91,7 @@ sudo pacman -S polybar
 
 
 ## Python specific
-install pyenv
+install [pyenv](https://github.com/pyenv/pyenv) to easily switch beteen python versions
 ```
 sudo pacman -S pyenv
 ```
