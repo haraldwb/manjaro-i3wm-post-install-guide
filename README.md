@@ -50,4 +50,7 @@ sudo pacman -S pyenv
 Follow guide here for bash and fish:
 https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv
 
-
+Install poetry, follow guide:
+https://python-poetry.org/docs/master/#installing-with-the-official-installer
+(Optional) Enable completions for poetry, follow this guide:
+https://python-poetry.org/docs/master/#enable-tab-completion-for-bash-fish-or-zsh
