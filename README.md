@@ -55,7 +55,7 @@ sudo pacman -S alacritty
 Remember to alter default terminal (default `$super+enter`) in .i3/config
 Switch out
 
-Install Rofi as an alternative to dmenu
+Install [Rofi](https://wiki.archlinux.org/title/Rofi) as an alternative to dmenu
 ```
 yay -S rofi
 ```
@@ -69,7 +69,7 @@ Choose a rofi theme you like
 rofi-theme-selector
 ```
 
-install neovim and add python support
+install [neovim](https://wiki.archlinux.org/title/Neovim) and add python support
 ```
 sudo pacman -S neovim python-neovim
 ```
