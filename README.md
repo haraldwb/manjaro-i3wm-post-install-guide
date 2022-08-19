@@ -43,9 +43,6 @@ install [alacritty](https://alacritty.org/)
 sudo pacman -S alacritty
 ```
 Remember to alter default terminal (default `$super+enter`) in .i3/config
-Switch out
-
-
 
 
 ## apps
@@ -73,10 +70,12 @@ Create rofi config by dumping default
 ```
 rofi -dump-config > ~/.config/rofi/config.rasi
 ```
-Choose a rofi theme you like by running (if you're unable to save theme with ALT+a you need to run step above)
+Choose a rofi theme you like by running:
 ```
 rofi-theme-selector
 ```
+(if you're unable to save theme with ALT+a you need to run step above).
+
 Rofi is highly customizeable, e.g. see [this repo](https://github.com/adi1090x/rofi) for a huge collection of custom Applets, Launchers & Powermenus
 
 install [neovim](https://wiki.archlinux.org/title/Neovim) and add python support
@@ -89,7 +88,6 @@ install polybar
 sudo pacman -S polybar
 ```
 
-
 ## Python specific
 install [pyenv](https://github.com/pyenv/pyenv) to easily switch beteen python versions
 ```
@@ -98,7 +96,7 @@ sudo pacman -S pyenv
 Follow guide [here](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv) for setting up your shell environment (bash and fish):
 
 
-Install poetry, follow [this](https://python-poetry.org/docs/master/#installing-with-the-official-installer) guide:
+Install [poetry](https://python-poetry.org/) to manage packages and dependencies, follow [this guide.](https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
-(Optional) Enable completions for poetry, follow [this](https://python-poetry.org/docs/master/#enable-tab-completion-for-bash-fish-or-zsh) guide:
+(Optional) Enable completions for poetry, follow [this guide](https://python-poetry.org/docs/master/#enable-tab-completion-for-bash-fish-or-zsh)
 
