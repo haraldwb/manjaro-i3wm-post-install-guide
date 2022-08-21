@@ -20,6 +20,21 @@ sudo systemctl status fstrim.timer
 sudo systemctl enable fstrim.timer
 ```
 
+Change [swappiness](https://wiki.archlinux.org/title/Swap#Swappiness)
+
+Check current swappiness:
+```
+sysctl vm.swappiness
+or
+cat /proc/sys/vm/swappiness
+```
+
+set permanent swappiness
+```
+sudo vim /etc/sysctl.d/99-swappiness.conf
+vm.swappiness=10
+```
+
 Enable [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall)
 ```
 sudo ufw enable
