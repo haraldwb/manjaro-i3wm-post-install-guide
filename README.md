@@ -59,6 +59,8 @@ sudo pacman -S alacritty
 ```
 Remember to alter default terminal (default `$super+enter`) in .i3/config
 
+#### (Optional) Update BIOS/Firmware:
+[fwupd](https://fwupd.org/) is quick and easy to use, follow the guide on [archlinux wiki](https://wiki.archlinux.org/title/Fwupd)
 
 ## apps
 
@@ -114,4 +116,3 @@ Follow guide [here](https://github.com/pyenv/pyenv#set-up-your-shell-environment
 Install [poetry](https://python-poetry.org/) to manage packages and dependencies, follow [this guide.](https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
 (Optional) Enable completions for poetry, follow [this guide](https://python-poetry.org/docs/master/#enable-tab-completion-for-bash-fish-or-zsh)
-
