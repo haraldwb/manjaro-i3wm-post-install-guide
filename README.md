@@ -62,6 +62,19 @@ Remember to alter default terminal (default `$super+enter`) in .i3/config
 #### (Optional) Update BIOS/Firmware:
 [fwupd](https://fwupd.org/) is quick and easy to use, follow the guide on [archlinux wiki](https://wiki.archlinux.org/title/Fwupd)
 
+
+#### (Optional) Screen flickering issues
+First thing to try is to disable Intel's Panel Self Refresh (psr)
+See [this](https://askubuntu.com/a/842991) post for how to do it by updating GRUB parameters. [Arch wiki on same issue](https://wiki.archlinux.org/title/Intel_graphics#Screen_flickering) and more info on [GRUB and changing parameters](https://wiki.archlinux.org/title/Kernel_parameters#GRUB)
+
+You can do the same by creating a file `/etc/modprobe.d/`, e.g:
+```
+sudo nvim /etc/modprobe.d/i915.conf
+
+options i915 enable_psr=0
+
+```
+
 ## apps
 
 install brave browser (tip: add [ublock origin](https://github.com/gorhill/uBlock) as an extension)
