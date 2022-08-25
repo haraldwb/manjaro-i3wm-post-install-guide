@@ -113,10 +113,12 @@ install [neovim](https://wiki.archlinux.org/title/Neovim) and add python support
 sudo pacman -S neovim python-neovim
 ```
 
-install polybar
+install [polybar](https://github.com/polybar/polybar)
+
 ```
 sudo pacman -S polybar
 ```
+See the [polybar wiki](https://github.com/polybar/polybar/wiki) for a great intro 
 
 ## Python specific
 install [pyenv](https://github.com/pyenv/pyenv) to easily switch beteen python versions
