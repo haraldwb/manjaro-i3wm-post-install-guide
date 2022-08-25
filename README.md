@@ -89,6 +89,8 @@ install vscode, i prefer the binary to get access to the marketplate
 ```
 yay -S visual-studio-code-bin
 ```
+
+Install docker, [this guide](https://www.linuxfordevices.com/tutorials/linux/install-docker-on-arch) is quick and simple
 ## Ricing I3
 
 Install [Rofi](https://wiki.archlinux.org/title/Rofi) as an alternative to dmenu
