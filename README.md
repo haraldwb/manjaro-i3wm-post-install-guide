@@ -108,6 +108,11 @@ rofi-theme-selector
 
 Rofi is highly customizeable, e.g. see [this repo](https://github.com/adi1090x/rofi) for a huge collection of custom Applets, Launchers & Powermenus
 
+You can e.g. make the rofi program launcher show icons, my i3 program launcher is:
+```
+bindsym $mod+d exec --no-startup-id "rofi -show run -show-icons"
+```
+
 install [neovim](https://wiki.archlinux.org/title/Neovim) and add python support
 ```
 sudo pacman -S neovim python-neovim
