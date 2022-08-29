@@ -2,7 +2,8 @@
 Rough guide of packages and apps to install after a fresh manjaro i3 install. Updating as I go through my own setup. 
 
 See also:
-- 
+- https://jasoneckert.github.io/myblog/configuring-i3/
+- https://aptrinh.js.org/manjaro-rice.html
 
 ## system
 
