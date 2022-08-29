@@ -1,6 +1,9 @@
 # manjaro i3wm-post-install-guide
 Rough guide of packages and apps to install after a fresh manjaro i3 install. Updating as I go through my own setup. 
 
+See also:
+- 
+
 ## system
 
 Update pacman mirrors
@@ -73,6 +76,13 @@ sudo nvim /etc/modprobe.d/i915.conf
 
 options i915 enable_psr=0
 
+```
+
+If that doesnt work check if enabling vsync helps.
+If you're using picom (default compositor):
+```
+nvim  ~/.config/picom/picom.conf
+vsync = true;
 ```
 
 ## apps
