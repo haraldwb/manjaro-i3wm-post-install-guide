@@ -52,6 +52,11 @@ Install [fish](https://fishshell.com/)
 yay -S fish
 ```
 
+set fish as [default shell](https://github.com/fish-shell/fish-shell#switching-to-fish)
+```
+chsh -s /usr/local/bin/fish
+```
+
 i3-config-wizard should run at first i3 boot, if not:
 ```
 i3-config-wizard
