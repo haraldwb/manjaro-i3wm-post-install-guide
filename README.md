@@ -141,6 +141,12 @@ install [polybar](https://github.com/polybar/polybar)
 ```
 sudo pacman -S polybar
 ```
+It's wise to install the font-awesome icon pack:
+
+```
+sudo pacman -S extra/ttf-font-awesome
+```
+
 See the [polybar wiki](https://github.com/polybar/polybar/wiki) for a great intro 
 
 ## Python specific
